@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NotificationTableViewCell" customModule="EliteCake" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDi-ZJ-KcV">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="60"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="VYw-8c-2cL">
+                                <rect key="frame" x="53" y="11" width="297" height="38"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Order from Elite Cake has been delivered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9o-ia-Qb7">
+                                        <rect key="frame" x="0.0" y="0.0" width="297" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="September 29,2022 at 11.30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri4-1S-aAf">
+                                        <rect key="frame" x="0.0" y="21" width="297" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6V-Xm-NSi">
+                                <rect key="frame" x="10" y="59" width="340" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="K50-T1-7Qx"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yum_Box_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hOo-Zi-Ho0">
+                                <rect key="frame" x="8" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2ca-vY-xuK"/>
+                                    <constraint firstAttribute="width" constant="40" id="7E6-wP-tJ1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="PureWhite"/>
+                        <constraints>
+                            <constraint firstItem="hOo-Zi-Ho0" firstAttribute="centerY" secondItem="VYw-8c-2cL" secondAttribute="centerY" id="7yz-lx-yfF"/>
+                            <constraint firstItem="R6V-Xm-NSi" firstAttribute="leading" secondItem="nDi-ZJ-KcV" secondAttribute="leading" constant="10" id="CWJ-RF-eEn"/>
+                            <constraint firstItem="hOo-Zi-Ho0" firstAttribute="centerY" secondItem="nDi-ZJ-KcV" secondAttribute="centerY" id="ORV-yb-kQj"/>
+                            <constraint firstAttribute="bottom" secondItem="R6V-Xm-NSi" secondAttribute="bottom" id="dFG-Du-rdX"/>
+                            <constraint firstAttribute="trailing" secondItem="VYw-8c-2cL" secondAttribute="trailing" constant="10" id="ePV-e3-zag"/>
+                            <constraint firstItem="hOo-Zi-Ho0" firstAttribute="leading" secondItem="nDi-ZJ-KcV" secondAttribute="leading" constant="8" id="gU8-41-G7K"/>
+                            <constraint firstAttribute="trailing" secondItem="R6V-Xm-NSi" secondAttribute="trailing" constant="10" id="pTw-xN-VDb"/>
+                            <constraint firstItem="VYw-8c-2cL" firstAttribute="leading" secondItem="hOo-Zi-Ho0" secondAttribute="trailing" constant="5" id="ug0-gO-J2u"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="PureWhite"/>
+                <constraints>
+                    <constraint firstItem="nDi-ZJ-KcV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UAn-4n-ae7"/>
+                    <constraint firstItem="nDi-ZJ-KcV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WIW-Ap-Bpm"/>
+                    <constraint firstAttribute="bottom" secondItem="nDi-ZJ-KcV" secondAttribute="bottom" id="hh7-Pj-w32"/>
+                    <constraint firstAttribute="trailing" secondItem="nDi-ZJ-KcV" secondAttribute="trailing" id="iPK-Jw-bEK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottmView" destination="R6V-Xm-NSi" id="TFh-R0-dkp"/>
+                <outlet property="contentLbl" destination="g9o-ia-Qb7" id="jGd-1v-P7K"/>
+                <outlet property="dateTimeLbl" destination="Ri4-1S-aAf" id="OFI-bk-CcW"/>
+                <outlet property="logo" destination="hOo-Zi-Ho0" id="6El-LQ-fD7"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Yum_Box_Logo" width="162" height="162"/>
+        <namedColor name="PureWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

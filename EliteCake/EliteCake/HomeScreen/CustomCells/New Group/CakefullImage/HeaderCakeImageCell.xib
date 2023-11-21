@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCakeImageCell" id="gTV-IL-0wX" customClass="HeaderCakeImageCell" customModule="EliteCake" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="214"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="214"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTx-Ov-dpi">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="214"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-rY-IdB">
+                                <rect key="frame" x="10" y="2" width="342" height="212"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kx9-5b-IKl">
+                                <rect key="frame" x="10" y="10" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="g3D-DK-2uY"/>
+                                    <constraint firstAttribute="width" constant="25" id="xHf-vX-dUU"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="backBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="czB-UM-aJA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="MWr-rY-IdB" firstAttribute="leading" secondItem="aTx-Ov-dpi" secondAttribute="leading" constant="10" id="LrA-fa-MQh"/>
+                            <constraint firstItem="Kx9-5b-IKl" firstAttribute="leading" secondItem="aTx-Ov-dpi" secondAttribute="leading" constant="10" id="MQq-qQ-mkC"/>
+                            <constraint firstAttribute="bottom" secondItem="MWr-rY-IdB" secondAttribute="bottom" id="Xhc-cF-MCi"/>
+                            <constraint firstAttribute="trailing" secondItem="MWr-rY-IdB" secondAttribute="trailing" constant="10" id="cUH-eA-FyS"/>
+                            <constraint firstItem="MWr-rY-IdB" firstAttribute="top" secondItem="aTx-Ov-dpi" secondAttribute="top" constant="2" id="dsa-BA-F1V"/>
+                            <constraint firstItem="Kx9-5b-IKl" firstAttribute="top" secondItem="aTx-Ov-dpi" secondAttribute="top" constant="10" id="rM6-tj-jrB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="aTx-Ov-dpi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8F8-a5-3PT"/>
+                <constraint firstItem="aTx-Ov-dpi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KC8-OK-Bib"/>
+                <constraint firstAttribute="bottom" secondItem="aTx-Ov-dpi" secondAttribute="bottom" id="NqJ-Ic-GHO"/>
+                <constraint firstAttribute="trailing" secondItem="aTx-Ov-dpi" secondAttribute="trailing" id="aXe-oW-jq2"/>
+            </constraints>
+            <size key="customSize" width="362" height="214"/>
+            <connections>
+                <outlet property="backBtn" destination="Kx9-5b-IKl" id="WZT-xh-dap"/>
+                <outlet property="bgImage" destination="MWr-rY-IdB" id="P4p-ku-e3Y"/>
+            </connections>
+            <point key="canvasLocation" x="363.768115942029" y="168.75"/>
+        </collectionViewCell>
+    </objects>
+</document>

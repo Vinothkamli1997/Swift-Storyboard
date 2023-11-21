@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuDishCollectionViewCell" id="gTV-IL-0wX" customClass="MenuDishCollectionViewCell" customModule="EliteCake" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVT-tg-B78">
+                        <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llg-Ze-2Zt">
+                                <rect key="frame" x="5" y="5" width="131" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simplistic Cakes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5e-fY-I8F">
+                                        <rect key="frame" x="19" y="13" width="93" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="f5e-fY-I8F" firstAttribute="centerX" secondItem="llg-Ze-2Zt" secondAttribute="centerX" id="4Qq-G9-QNq"/>
+                                    <constraint firstItem="f5e-fY-I8F" firstAttribute="centerY" secondItem="llg-Ze-2Zt" secondAttribute="centerY" id="qw4-ia-Apq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="PureWhite"/>
+                        <constraints>
+                            <constraint firstItem="llg-Ze-2Zt" firstAttribute="top" secondItem="vVT-tg-B78" secondAttribute="top" constant="5" id="g7i-pd-a6j"/>
+                            <constraint firstItem="llg-Ze-2Zt" firstAttribute="leading" secondItem="vVT-tg-B78" secondAttribute="leading" constant="5" id="gdA-a9-pRN"/>
+                            <constraint firstAttribute="trailing" secondItem="llg-Ze-2Zt" secondAttribute="trailing" id="ugb-nY-8be"/>
+                            <constraint firstAttribute="bottom" secondItem="llg-Ze-2Zt" secondAttribute="bottom" constant="5" id="yFa-uD-vlX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="PureWhite"/>
+            <constraints>
+                <constraint firstItem="vVT-tg-B78" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VfD-Z1-CNn"/>
+                <constraint firstAttribute="bottom" secondItem="vVT-tg-B78" secondAttribute="bottom" id="ZOm-KS-8Bw"/>
+                <constraint firstAttribute="trailing" secondItem="vVT-tg-B78" secondAttribute="trailing" id="a7G-Jj-mEK"/>
+                <constraint firstItem="vVT-tg-B78" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="djl-rw-5LY"/>
+            </constraints>
+            <size key="customSize" width="136" height="50"/>
+            <connections>
+                <outlet property="bgView" destination="llg-Ze-2Zt" id="fvJ-Pv-QyJ"/>
+                <outlet property="filterNameLbl" destination="f5e-fY-I8F" id="uJ8-2C-WCh"/>
+            </connections>
+            <point key="canvasLocation" x="200.00000000000003" y="113.83928571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="PureWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

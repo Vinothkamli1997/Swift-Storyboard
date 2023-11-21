@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AnniversaryTableViewCell" customModule="EliteCake" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V43-7k-uk6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGI-Qy-U1u">
+                                <rect key="frame" x="139" y="8" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="32T-Q9-ZNM">
+                                <rect key="frame" x="0.0" y="34" width="320" height="106"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D8p-pN-GB9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="32T-Q9-ZNM" firstAttribute="top" secondItem="WGI-Qy-U1u" secondAttribute="bottom" constant="5" id="3IE-z2-7Uy"/>
+                            <constraint firstItem="WGI-Qy-U1u" firstAttribute="centerX" secondItem="V43-7k-uk6" secondAttribute="centerX" id="42r-iz-u0p"/>
+                            <constraint firstAttribute="bottom" secondItem="32T-Q9-ZNM" secondAttribute="bottom" id="awI-mQ-bxR"/>
+                            <constraint firstItem="32T-Q9-ZNM" firstAttribute="leading" secondItem="V43-7k-uk6" secondAttribute="leading" id="g6P-Z5-z3x"/>
+                            <constraint firstItem="WGI-Qy-U1u" firstAttribute="top" secondItem="V43-7k-uk6" secondAttribute="top" constant="8" id="mhM-cp-acy"/>
+                            <constraint firstAttribute="trailing" secondItem="32T-Q9-ZNM" secondAttribute="trailing" id="xCf-mi-eRc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="V43-7k-uk6" secondAttribute="trailing" id="NL2-xa-RpI"/>
+                    <constraint firstItem="V43-7k-uk6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="s0G-NJ-KFb"/>
+                    <constraint firstItem="V43-7k-uk6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vbN-lk-CkE"/>
+                    <constraint firstAttribute="bottom" secondItem="V43-7k-uk6" secondAttribute="bottom" id="xMf-uQ-Dwy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="anniversaryCollectionView" destination="32T-Q9-ZNM" id="7Yr-3R-XDX"/>
+                <outlet property="headingLbl" destination="WGI-Qy-U1u" id="v5P-lq-Rex"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

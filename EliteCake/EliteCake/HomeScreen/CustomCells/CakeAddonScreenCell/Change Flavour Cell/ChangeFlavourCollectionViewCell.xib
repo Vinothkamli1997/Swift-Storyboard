@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChangeFlavourCollectionViewCell" id="gTV-IL-0wX" customClass="ChangeFlavourCollectionViewCell" customModule="EliteCake" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="254" height="196"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="254" height="196"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAL-P6-vFh">
+                        <rect key="frame" x="10" y="0.0" width="234" height="196"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAI-HZ-arO">
+                                <rect key="frame" x="47" y="38" width="140" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uuZ-sH-snv">
+                                        <rect key="frame" x="30" y="-20" width="80" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="52I-oz-sth"/>
+                                            <constraint firstAttribute="width" constant="80" id="5jt-kc-Ijr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stawberry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag8-IG-UrX">
+                                        <rect key="frame" x="31" y="58" width="78" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bfr-PX-9O9">
+                                        <rect key="frame" x="40.5" y="83.5" width="59" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4s-a9-f6c">
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ed-Qj-JtQ">
+                                                <rect key="frame" x="39" y="0.0" width="20" height="22"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="checkmark.circle" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="ViewDarkMode"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="7xR-r0-XBP"/>
+                                    <constraint firstItem="bfr-PX-9O9" firstAttribute="centerX" secondItem="VAI-HZ-arO" secondAttribute="centerX" id="9fD-Ji-w5H"/>
+                                    <constraint firstItem="uuZ-sH-snv" firstAttribute="centerX" secondItem="VAI-HZ-arO" secondAttribute="centerX" id="9gl-rB-PMS"/>
+                                    <constraint firstItem="bfr-PX-9O9" firstAttribute="top" secondItem="Ag8-IG-UrX" secondAttribute="bottom" constant="5" id="IRC-Xo-Bc7"/>
+                                    <constraint firstItem="Ag8-IG-UrX" firstAttribute="top" secondItem="uuZ-sH-snv" secondAttribute="bottom" constant="8" id="XiH-s0-EuJ"/>
+                                    <constraint firstItem="Ag8-IG-UrX" firstAttribute="centerX" secondItem="VAI-HZ-arO" secondAttribute="centerX" id="XrF-it-VOg"/>
+                                    <constraint firstItem="uuZ-sH-snv" firstAttribute="top" secondItem="VAI-HZ-arO" secondAttribute="top" constant="-20" id="Zu5-bB-blY"/>
+                                    <constraint firstAttribute="width" constant="140" id="bfM-lX-SQK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="VAI-HZ-arO" firstAttribute="centerY" secondItem="IAL-P6-vFh" secondAttribute="centerY" id="JEz-x8-7vU"/>
+                            <constraint firstItem="VAI-HZ-arO" firstAttribute="centerX" secondItem="IAL-P6-vFh" secondAttribute="centerX" id="Uqd-J6-iXM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="IAL-P6-vFh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="3zv-e4-PxG"/>
+                <constraint firstItem="IAL-P6-vFh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hmv-Xl-BKG"/>
+                <constraint firstItem="IAL-P6-vFh" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="WwZ-F3-Gvb"/>
+                <constraint firstItem="IAL-P6-vFh" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="agt-Bk-08k"/>
+            </constraints>
+            <size key="customSize" width="254" height="196"/>
+            <connections>
+                <outlet property="bgView" destination="VAI-HZ-arO" id="bhs-sw-eRg"/>
+                <outlet property="flavourImage" destination="uuZ-sH-snv" id="fZP-ir-LSR"/>
+                <outlet property="flavourName" destination="Ag8-IG-UrX" id="kWQ-mp-kpI"/>
+                <outlet property="flavourSelectBtn" destination="4Ed-Qj-JtQ" id="11q-BX-h6s"/>
+                <outlet property="priceLbl" destination="A4s-a9-f6c" id="iOj-K1-39j"/>
+            </connections>
+            <point key="canvasLocation" x="1.4492753623188408" y="113.16964285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="ViewDarkMode">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

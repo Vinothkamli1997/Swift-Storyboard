@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="EliteCake" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="171" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="171" height="187"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQ3-Wg-94A">
+                        <rect key="frame" x="0.0" y="0.0" width="171" height="187"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Na-GT-MVl">
+                                <rect key="frame" x="10" y="28.5" width="150" height="130"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6RZ-SK-wxU">
+                                        <rect key="frame" x="60" y="-15" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="bpp-Ze-SHY"/>
+                                            <constraint firstAttribute="width" constant="100" id="sH1-wU-FRE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ad-3c-6zG">
+                                        <rect key="frame" x="54" y="94" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.91828614470000003" green="0.30286025999999999" blue="0.20099878309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="ViewDarkMode"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9Ad-3c-6zG" secondAttribute="bottom" constant="15" id="1J6-V8-3f4"/>
+                                    <constraint firstItem="9Ad-3c-6zG" firstAttribute="centerX" secondItem="1Na-GT-MVl" secondAttribute="centerX" id="4Vl-uI-V7S"/>
+                                    <constraint firstItem="6RZ-SK-wxU" firstAttribute="top" secondItem="1Na-GT-MVl" secondAttribute="top" constant="-15" id="Cv9-WN-Bm6"/>
+                                    <constraint firstAttribute="trailing" secondItem="6RZ-SK-wxU" secondAttribute="trailing" constant="-10" id="MM1-VF-DCc"/>
+                                    <constraint firstAttribute="height" constant="130" id="byC-qs-BmI"/>
+                                    <constraint firstAttribute="width" constant="150" id="cZa-em-NYB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1Na-GT-MVl" firstAttribute="leading" secondItem="DQ3-Wg-94A" secondAttribute="leading" constant="10" id="2tG-G7-PPA"/>
+                            <constraint firstItem="1Na-GT-MVl" firstAttribute="centerY" secondItem="DQ3-Wg-94A" secondAttribute="centerY" id="h0M-iY-L7i"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="DQ3-Wg-94A" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MnS-Tu-7KH"/>
+                <constraint firstItem="DQ3-Wg-94A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="U7w-XA-EBB"/>
+                <constraint firstItem="DQ3-Wg-94A" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="m54-0M-MVo"/>
+                <constraint firstItem="DQ3-Wg-94A" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="zJ0-Qw-Ncl"/>
+            </constraints>
+            <size key="customSize" width="219" height="167"/>
+            <connections>
+                <outlet property="bgView" destination="1Na-GT-MVl" id="C5g-9O-Tkh"/>
+                <outlet property="cakeImg" destination="6RZ-SK-wxU" id="XVB-Gt-zfV"/>
+                <outlet property="cakeName" destination="9Ad-3c-6zG" id="tbX-xJ-1T2"/>
+            </connections>
+            <point key="canvasLocation" x="260.14492753623188" y="153.68303571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ViewDarkMode">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
